@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <!-- Site made with Mobirise Online Website Builder v5.9.13, https://a.mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v5.9.13, a.mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/photo-1601758177266-bc599de87707.jpeg" type="image/x-icon">
+  <meta name="description" content="Deploy Watson Assistant to help users with pet adoption, providing information on available pets, adoption processes, and care tips.">
+  <title>Pet Adoption Assistant</title>
+  <link rel="stylesheet" href="https://r.mobirisesite.com/461356/assets/web/assets/mobirise-icons2/mobirise2.css?rnd=1716535579814">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/461356/assets/bootstrap/css/bootstrap.min.css?rnd=1716535579814">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/461356/assets/bootstrap/css/bootstrap-grid.min.css?rnd=1716535579814">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/461356/assets/bootstrap/css/bootstrap-reboot.min.css?rnd=1716535579814">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/461356/assets/dropdown/css/style.css?rnd=1716535579814">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/461356/assets/socicon/css/styles.css?rnd=1716535579814">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/461356/assets/theme/css/style.css?rnd=1716535579814">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;700&display=swap&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;700&display=swap&display=swap"></noscript>
+  <link rel="stylesheet" href="https://r.mobirisesite.com/461356/assets/css/mbr-additional.css?rnd=1716535579814" type="text/css">
+  
+  
+  
+  
+</head>
+<body>
+  <script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "22669b7b-ca09-49d1-be0d-5276b04e76bc", // The ID of this integration.
+      region: "au-syd", // The region your integration is hosted in.
+      serviceInstanceID: "7a7a88d8-d079-4127-a6f5-08760406bc93", // The ID of your service instance.
+      onLoad: async (instance) => { await instance.render(); }
+    };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>
+  
+  <section data-bs-version="5.1" class="menu menu2 cid-udzD5L0EOx" once="menu" id="menu-5-udzD5L0EOx">
+	
+
+	<nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+		<div class="container">
+			<div class="navbar-brand">
+				<span class="navbar-logo">
+					<a href="https://mobiri.se">
+						<img src="assets/images/photo-1601758177266-bc599de87707.jpeg" alt="Mobirise Website Builder" style="height: 4.3rem;">
+					</a>
+				</span>
+				<span class="navbar-caption-wrap"><a class="navbar-caption text-black display-4" href="https://mobiri.se">PetPal</a></span>
+			</div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<div class="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
+					<li class="nav-item">
+						<a class="nav-link link text-black display-4" href="https://mobiri.se">Adopt</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link link text-black display-4" href="https://mobiri.se" aria-expanded="false">Explore</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link link text-black display-4" href="https://mobiri.se">Assistance</a>
+					</li>
+				</ul>
+				
+				<div class="navbar-buttons mbr-section-btn">
+					<a class="btn btn-primary display-4" href="https://mobiri.se">Get Started</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+</section>
+
+<section data-bs-version="5.1" class="header18 cid-udzD5L1tIy mbr-fullscreen" data-bg-video="https://www.youtube.com/embed/17g_hkKZPIE?autoplay=1&amp;loop=1&amp;playlist=17g_hkKZPIE&amp;t=20&amp;mute=1&amp;playsinline=1&amp;controls=0&amp;showinfo=0&amp;autohide=1&amp;allowfullscreen=true&amp;mode=transparent" id="hero-15-udzD5L1tIy">
+  
+
+  <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(0, 0, 0);"></div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="content-wrap col-12 col-md-12">
+        <h1 class="mbr-section-title mbr-fonts-style mbr-white mb-4 display-1">
+          <strong>PetPal Assistant</strong>
+        </h1>
+        
+        <p class="mbr-fonts-style mbr-text mbr-white mb-4 display-7">Unleash the Power of Watson Assistant for Pet Adoption - Your Virtual Companion in Finding the Perfect Furry Friend!</p>
+        <div class="mbr-section-btn">
+          <a class="btn btn-white-outline display-7" href="https://mobiri.se">Discover More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-bs-version="5.1" class="article8 cid-udzD5L1Ci2" id="about-me-8-udzD5L1Ci2">
+  
+
+  
+  
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="card col-md-12 col-lg-10">
+        <div class="card-wrapper">
+          <div class="image-wrapper d-flex justify-content-center mb-4">
+            <img src="assets/images/photo-1561037404-61cd46aa615b.jpeg" alt="Mobirise Website Builder">
+          </div>
+          <div class="card-content-text">
+            <h3 class="card-title mbr-fonts-style mbr-white mt-3 mb-4 display-2">
+            <strong>Meet Your PetPal</strong>
+          </h3>
+          <div class="row card-box align-left">
+            <div class="item features-without-image col-12">
+              <div class="item-wrapper">
+                
+                <p class="mbr-text mbr-fonts-style display-7">Welcome to PetPal, your ultimate virtual pet adoption assistant powered by the incredible Watson Assistant! We're here to guide you through the exciting journey of finding and welcoming a new furry member into your family.</p>
+              </div>
+            </div>
+            <div class="item features-without-image col-12">
+              <div class="item-wrapper">
+                
+                <p class="mbr-text mbr-fonts-style display-7">From providing detailed information on available pets to assisting you with the adoption process and offering valuable care tips, PetPal is your go-to companion for all things pet adoption.</p>
+              </div>
+            </div>
+            <div class="item features-without-image col-12">
+              <div class="item-wrapper">
+                
+                <p class="mbr-text mbr-fonts-style display-7">Let PetPal be your trusted sidekick in this heartwarming adventure of bringing joy and love into your life through pet adoption. Get ready to embark on a paw-some journey with us!</p>
+              </div>
+            </div>
+            
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-bs-version="5.1" class="people02 cid-udzD5L1PvJ" id="testimonials-10-udzD5L1PvJ">
+	
+
+	
+	
+	<div class="container">
+		<div class="row mb-5 justify-content-center">
+			<div class="col-12 content-head">
+				<h3 class="mbr-section-title mbr-fonts-style align-center mb-4 display-2">
+					<strong>Pawsitivity</strong>
+				</h3>
+				<h5 class="mbr-section-subtitle mbr-fonts-style align-center mb-4 display-7">See What Our Happy Adopters Have to Say About PetPal:</h5>
+			</div>
+		</div>
+		<div class="row">
+				<div class="item features-without-image col-12 col-md-6 col-lg-4 mb-5">
+					<div class="item-wrapper">
+						<div class="card-box align-center">
+							<div class="iconfont-wrapper mb-3">
+								<span class="mbr-iconfont mobi-mbri-star mobi-mbri"></span>
+								<span class="mbr-iconfont mobi-mbri-star mobi-mbri"></span>
+								<span class="mbr-iconfont mobi-mbri-star mobi-mbri"></span>
+								<span class="mbr-iconfont mobi-mbri-star mobi-mbri"></span>
+								<span class="mbr-iconfont mobi-mbri-star mobi-mbri"></span>
+							</div>
+							<h5 class="card-title mbr-fonts-style mb-3 display-7">PetPal made the adoption process a breeze! I found my perfect match in no time.</h5>
+							<p class="card-text mbr-fonts-style mb-0 display-7">Samantha P.</p>
+						</div>
+					</div>
+				</div>
+				<div class="item features-without-image col-12 col-md-6 col-lg-4 mb-5">
+					<div class="item-wrapper">
+						<div class="card-box align-center">
+							<div class="iconfont-wrapper mb-3">
+								<span class="mbr-iconfont mobi-mbri-star mobi-mbri"></span>
+								<span class="mbr-iconfont mobi-mbri-star mobi-mbri"></span>
+								<span class="mbr-iconfont mobi-mbri-star mobi-mbri"></span>
+								<span class="mbr-iconfont mobi-mbri-star mobi-mbri"></span>
+								<span class="mbr-iconfont mobi-mbri-star mobi-mbri"></span>
+							</div>
+							<h5 class="card-title mbr-fonts-style mb-3 display-7">Thanks to PetPal, I now have a furry best friend who brings so much joy!</h5>
+							<p class="card-text mbr-fonts-style mb-0 display-7">Michael R.</p>
+						</div>
+					</div>
+				</div>
+				<div class="item features-without-image col-12 col-md-6 col-lg-4 mb-5">
+					<div class="item-wrapper">
+						<div class="card-box align-center">
+							<div class="iconfont-wrapper mb-3">
+								<span class="mbr-iconfont mobi-mbri-star mobi-mbri"></span>
+								<span class="mbr-iconfont mobi-mbri-star mobi-mbri"></span>
+								<span class="mbr-iconfont mobi-mbri-star mobi-mbri"></span>
+								<span class="mbr-iconfont mobi-mbri-star mobi-mbri"></span>
+								<span class="mbr-iconfont mobi-mbri-star mobi-mbri"></span>
+							</div>
+							<h5 class="card-title mbr-fonts-style mb-3 display-7">PetPal's care tips have been invaluable in ensuring my pet's well-being.</h5>
+							<p class="card-text mbr-fonts-style mb-0 display-7">Emily S.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		<div class="row mt-0 mt-md-5">
+			<div class="col-12 align-center">
+				<div class="mbr-section-btn">
+					<a class="btn btn-primary display-7" href="https://mobiri.se">Start Your Adoption Journey</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section data-bs-version="5.1" class="article14 cid-udzD5L1AJx" id="generic-text-11-udzD5L1AJx">
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-10">
+                <h3 class="mbr-section-title mbr-fonts-style display-2">
+                    <strong></strong>
+                </h3>
+                <p class="mbr-section-subtitle mbr-fonts-style mt-4 display-7"></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="gallery07 cid-udzD5L2MDL" id="gallery-16-udzD5L2MDL">
+  
+  
+  <div class="container-fluid gallery-wrapper">
+    <div class="row justify-content-center">
+      <div class="col-12 content-head">
+        <div class="mbr-section-head mb-5">
+          <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+            <strong>Adopt Your Virtual Pet</strong>
+          </h4>
+          
+        </div>
+      </div>
+    </div>
+    <div class="grid-container">
+      <div class="grid-container-3 moving-left" style="transform: translate3d(-200px, 0px, 0px);">
+        <div class="grid-item">
+          <img src="assets/images/photo-1608096299230-81c7b43d5dfc.jpeg" alt="Mobirise Website Builder">
+        </div>
+        <div class="grid-item">
+          <img src="assets/images/photo-1583301286816-f4f05e1e8b25.jpeg" alt="Mobirise Website Builder">
+        </div>
+        <div class="grid-item">
+          <img src="assets/images/photo-1444212477490-ca407925329e.jpeg" alt="Mobirise Website Builder">
+        </div>
+        <div class="grid-item">
+          <img src="assets/images/photo-1548199973-03cce0bbc87b.jpeg" alt="Mobirise Website Builder">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-bs-version="5.1" class="features10 cid-udzD5L2BMv" id="metrics-2-udzD5L2BMv">
+  
+
+  
+  
+  <div class="container">
+    
+    <div class="row justify-content-center">
+      <div class="item features-without-image col-12 col-md-6 col-lg-4">
+        <div class="item-wrapper">
+          <div class="card-box align-left">
+            
+            <p class="card-title mbr-fonts-style mb-3 display-1">
+              <strong>100+</strong>
+            </p>
+            <p class="card-text mbr-fonts-style mb-3 display-7">Virtual Pets</p>
+            
+          </div>
+        </div>
+      </div>
+      <div class="item features-without-image col-12 col-md-6 col-lg-4">
+        <div class="item-wrapper">
+          <div class="card-box align-left">
+            
+            <p class="card-title mbr-fonts-style mb-3 display-1">
+              <strong>24/7</strong>
+            </p>
+            <p class="card-text mbr-fonts-style mb-3 display-7">Adoption Assistance</p>
+            
+          </div>
+        </div>
+      </div>
+      <div class="item features-without-image col-12 col-md-6 col-lg-4">
+        <div class="item-wrapper">
+          <div class="card-box align-left">
+            
+            <p class="card-title mbr-fonts-style mb-3 display-1">
+              <strong>Unlimited</strong>
+            </p>
+            <p class="card-text mbr-fonts-style mb-3 display-7">Care Tips</p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-bs-version="5.1" class="features035 cid-udzD5L2xVt" id="call-to-action-11-udzD5L2xVt">
+    
+
+    
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-9 active">
+                <div class="item-wrapper">
+                    <div class="card-box">
+                        <h4 class="card-text mbr-fonts-style display-7">Get ready to embark on a virtual pet adventure! Adopt your perfect companion today.</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 active">
+                <div class="mbr-section-btn">
+                    <a class="btn btn-primary display-7" href="https://mobiri.se">Start Your Adoption Journey</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="features5 cid-udzD5L32jP" id="features-24-udzD5L32jP">
+    
+
+    
+    
+    <div class="container">
+        <div class="row mb-5 justify-content-center">
+            <div class="col-12 content-head">
+                <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+                    <strong>Virtual Pet Adoption Assistant</strong>
+                </h3>
+                <p class="mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-4 display-7">Your ultimate guide to virtual pet adoption and care.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="item features-without-image col-12 col-md-6 col-lg-4 item-mb">
+                <div class="item-wrapper">
+                    <div class="card-box align-left">
+                        
+                        <p class="card-title mbr-fonts-style mt-0 mb-3 display-5">
+                            <strong>Interactive</strong>
+                        </p>
+                        <p class="card-text mbr-fonts-style display-7">Engage with virtual pets in real-time.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="item features-without-image col-12 col-md-6 col-lg-4 item-mb">
+                <div class="item-wrapper">
+                    <div class="card-box align-left">
+                        
+                        <p class="card-title mbr-fonts-style mt-0 mb-3 display-5">
+                            <strong>Expert Advice</strong>
+                        </p>
+                        <p class="card-text mbr-fonts-style display-7">Receive personalized tips from pet care specialists.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="item features-without-image col-12 col-md-6 col-lg-4 item-mb">
+                <div class="item-wrapper">
+                    <div class="card-box align-left">
+                        
+                        <p class="card-title mbr-fonts-style mt-0 mb-3 display-5">
+                            <strong>Endless Fun</strong>
+                        </p>
+                        <p class="card-text mbr-fonts-style display-7">Explore a variety of virtual pet species.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="item features-without-image col-12 col-md-6 col-lg-4 item-mb">
+                <div class="item-wrapper">
+                    <div class="card-box align-left">
+                        
+                        <p class="card-title mbr-fonts-style mt-0 mb-3 display-5">
+                            <strong>Instant Support</strong>
+                        </p>
+                        <p class="card-text mbr-fonts-style display-7">Get immediate help with adoption queries.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="item features-without-image col-12 col-md-6 col-lg-4 item-mb">
+                <div class="item-wrapper">
+                    <div class="card-box align-left">
+                        
+                        <p class="card-title mbr-fonts-style mt-0 mb-3 display-5">
+                            <strong>Tailored Solutions</strong>
+                        </p>
+                        <p class="card-text mbr-fonts-style display-7">Customized recommendations for your pet's needs.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="item features-without-image col-12 col-md-6 col-lg-4 item-mb">
+                <div class="item-wrapper">
+                    <div class="card-box align-left">
+                        
+                        <p class="card-title mbr-fonts-style mt-0 mb-3 display-5">
+                            <strong>24/7 Assistance</strong>
+                        </p>
+                        <p class="card-text mbr-fonts-style display-7">Round-the-clock support for all your pet-related concerns.</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="features03 cid-udzD5L3XS4" id="news-1-udzD5L3XS4">
+  
+  
+  <div class="container-fluid">
+    <div class="row justify-content-center mb-5">
+      <div class="col-12 content-head">
+        <div class="mbr-section-head">
+          <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+            <strong>Pet Adoption Paradise</strong>
+          </h4>
+          
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="item features-image col-12 col-md-6 col-lg-3 active">
+        <div class="item-wrapper">
+          <div class="item-img mb-3">
+            <img src="assets/images/photo-1450778869180-41d0601e046e.jpeg" alt="Mobirise Website Builder" title="">
+          </div>
+          <div class="item-content align-left">
+            <h5 class="item-title mbr-fonts-style mt-0 mb-2 display-5">
+              <strong>Meet Your New Furry Friend</strong>
+            </h5>
+            <p class="mbr-text mbr-fonts-style mb-3 display-7">May 23, 2024</p>
+            <p class="mbr-text mbr-fonts-style mb-3 display-7">Discover the purrfect companion waiting to wiggle its way into your heart. Get ready for endless cuddles and tail-wagging adventures!</p>
+            <div class="mbr-section-btn item-footer">
+              <a href="" class="btn item-btn btn-primary display-7">Adopt</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item features-image col-12 col-md-6 col-lg-3">
+        <div class="item-wrapper">
+          <div class="item-img mb-3">
+            <img src="assets/images/photo-1521247560470-d2cbfe2f7b47.jpeg" alt="Mobirise Website Builder" title="" data-slide-to="1" data-bs-slide-to="1">
+          </div>
+          <div class="item-content align-left">
+            <h5 class="item-title mbr-fonts-style mb-2 mt-0 display-5">
+              <strong>Adoption Made Easy</strong>
+            </h5>
+            <p class="mbr-text mbr-fonts-style mb-3 display-7">May 23, 2024</p>
+            <p class="mbr-text mbr-fonts-style mb-3 display-7">Say goodbye to ruff times! Our streamlined adoption process will have you and your new companion playing fetch in no time.</p>
+            <div class="mbr-section-btn item-footer">
+              <a href="" class="btn item-btn btn-primary display-7">Adopt</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item features-image col-12 col-md-6 col-lg-3">
+        <div class="item-wrapper">
+          <div class="item-img mb-3">
+            <img src="assets/images/photo-1522858547137-f1dcec554f55.jpeg" alt="Mobirise Website Builder" title="" data-slide-to="2" data-bs-slide-to="2">
+          </div>
+          <div class="item-content align-left">
+            <h5 class="item-title mbr-fonts-style mb-2 mt-0 display-5">
+              <strong>Pet Care 101</strong>
+            </h5>
+            <p class="mbr-text mbr-fonts-style mb-3 display-7">May 23, 2024</p>
+            <p class="mbr-text mbr-fonts-style mb-3 display-7">Unleash your inner pet pro with our expert care tips. From belly rubs to feather fluffing, become the ultimate pet whisperer!</p>
+            <div class="mbr-section-btn item-footer">
+              <a href="" class="btn item-btn btn-primary display-7">Adopt</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item features-image col-12 col-md-6 col-lg-3">
+        <div class="item-wrapper">
+          <div class="item-img mb-3">
+            <img src="assets/images/photo-1541781774459-bb2af2f05b55.jpeg" alt="Mobirise Website Builder" title="" data-slide-to="2" data-bs-slide-to="2">
+          </div>
+          <div class="item-content align-left">
+            <h5 class="item-title mbr-fonts-style mb-2 mt-0 display-5">
+              <strong>Join the Paw-some Family</strong>
+            </h5>
+            <p class="mbr-text mbr-fonts-style mb-3 display-7">May 23, 2024</p>
+            <p class="mbr-text mbr-fonts-style mb-3 display-7">Embrace the wagging tails and meow melodies. Become part of our furry family and experience unconditional love like never before.</p>
+            <div class="mbr-section-btn item-footer">
+              <a href="" class="btn item-btn btn-primary display-7">Adopt</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-bs-version="5.1" class="image3 cid-udzD5L3v8E" id="image-2-udzD5L3v8E">
+  
+
+  
+  
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-9">
+        <h4 class="mbr-description mbr-fonts-style mb-3 align-center display-5">
+          <strong>Furry Friends Galore</strong>
+        </h4>
+        <p class="mbr-description mbr-fonts-style mb-4 align-center display-7">Meet Your New Best Friend Today!</p>
+        <div class="image-wrapper">
+          <img class="w-100" src="assets/images/photo-1560743173-567a3b5658b1.jpeg" alt="Mobirise Website Builder">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-bs-version="5.1" class="list05 cid-udzD5L3WO4" id="faq-3-udzD5L3WO4">
+    
+    <div class="container">
+        <div class="col-12 mb-5 content-head">
+            <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+                <strong>Frequently Asked Fur-estions</strong>
+            </h3>
+            
+        </div>
+        <div class="row justify-content-center ">
+            <div class="col-12 col-lg-8">
+                <div class="item features-without-image col-12 active">
+                    <div class="item-wrapper">
+                        <h5 class="mbr-card-title mbr-fonts-style mt-0 mb-3 display-5">
+                            <strong>How do I adopt a pet?</strong></h5>
+                        <p class="mbr-text mbr-fonts-style mt-0 mb-3 display-7">To adopt a pet, simply click the 'Adopt' button and let the magic begin! Our team will guide you through the process with wagging tails and purrs of joy.</p>
+                    </div>
+                </div>
+                <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                        <h5 class="mbr-card-title mbr-fonts-style mt-0 mb-3 display-5">
+                            <strong>What pets are available for adoption?</strong></h5>
+                        <p class="mbr-text mbr-fonts-style mt-0 mb-3 display-7">We have a diverse range of pets waiting for their forever homes, from playful puppies to majestic meowers. Visit our website to meet them all!</p>
+                    </div>
+                </div>
+                <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                        <h5 class="mbr-card-title mbr-fonts-style mt-0 mb-3 display-5">
+                            <strong>How can I care for my new pet?</strong></h5>
+                        <p class="mbr-text mbr-fonts-style mt-0 mb-3 display-7">Caring for your new furry friend is a breeze with our expert tips. From grooming to playtime, we'll help you create a tail-wagging paradise at home.</p>
+                    </div>
+                </div>
+                <div class="item features-without-image col-12">
+                  <div class="item-wrapper">
+                      <h5 class="mbr-card-title mbr-fonts-style mt-0 mb-3 display-5">
+                          <strong>Can I visit the pets before adoption?</strong></h5>
+                      <p class="mbr-text mbr-fonts-style mt-0 mb-3 display-7">Absolutely! Come meet our adorable residents in person. Prepare for cuteness overload and heart-melting moments that will make you want to adopt them all!</p>
+                  </div>
+              </div>
+              <div class="item features-without-image col-12">
+                <div class="item-wrapper">
+                    <h5 class="mbr-card-title mbr-fonts-style mt-0 mb-3 display-5">
+                        <strong>What if my pet needs medical care?</strong></h5>
+                    <p class="mbr-text mbr-fonts-style mt-0 mb-3 display-7">Rest assured, we provide top-notch medical care for all our furry friends. Your pet's health and happiness are our top priorities, so you can focus on creating unforgettable memories together.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="social05 cid-udzD5L4Bnm" id="follow-us-2-udzD5L4Bnm">
+    
+
+    
+
+    <div class="container">
+        <div class="row">
+            <h3 class="mbr-section-title align-center mb-5 mbr-fonts-style display-2">
+                <strong>Stay Connected with Us</strong>
+            </h3>
+            <div class="col-12">
+                <div class="social-row">
+                    <div class="soc-item">
+                        <a href="https://mobiri.se/" target="_blank">
+                            <span class="mbr-iconfont socicon socicon-facebook"></span>
+                        </a>
+                    </div>
+                    <div class="soc-item">
+                        <a href="https://mobiri.se/" target="_blank">
+                            <span class="mbr-iconfont socicon-twitter socicon"></span>
+                        </a>
+                    </div>
+                    <div class="soc-item">
+                        <a href="https://mobiri.se/" target="_blank">
+                            <span class="mbr-iconfont socicon-instagram socicon"></span>
+                        </a>
+                    </div>
+                    <div class="soc-item">
+                        <a href="https://mobiri.se/" target="_blank">
+                            <span class="mbr-iconfont socicon socicon-linkedin"></span>
+                        </a>
+                    </div>
+                    <div class="soc-item">
+                        <a href="https://mobiri.se/" target="_blank">
+                            <span class="mbr-iconfont socicon socicon-twitch"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="clients04 cid-udzD5L4KYm" id="sponsors-1-udzD5L4KYm">
+    
+    
+    <div class="container-fluid">
+        <div class="row justify-content-center mb-5">
+            <div class="col-12 content-head">
+                <div class="mbr-section-head">
+                    <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+                        <strong>Pet Adoption Assistant</strong>
+                    </h4>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="item features-image col-12 col-md-6 col-sm-6 col-lg-2 active">
+                <div class="item-wrapper">
+                    <div class="">
+                        <img src="assets/images/photo-1554463529-e27854014799.jpeg" alt="Mobirise Website Builder" title="" data-slide-to="1" data-bs-slide-to="1">
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="item features-image col-12 col-md-6 col-sm-6 col-lg-2">
+                <div class="item-wrapper">
+                    <div class="">
+                        <img src="assets/images/photo-1646825461394-ebd1800141d1.jpeg" alt="Mobirise Website Builder" title="" data-slide-to="2" data-bs-slide-to="2">
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="item features-image col-12 col-md-6 col-sm-6 col-lg-2">
+                <div class="item-wrapper">
+                    <div class="">
+                        <img src="assets/images/photo-1651044450619-5ce74d316987.jpeg" alt="Mobirise Website Builder" title="" data-slide-to="3" data-bs-slide-to="3">
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="item features-image col-12 col-md-6 col-sm-6 col-lg-2">
+                <div class="item-wrapper">
+                    <div class="">
+                        <img src="assets/images/photo-1617727553252-65863c156eb0.jpeg" alt="Mobirise Website Builder" title="" data-slide-to="4" data-bs-slide-to="4">
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="item features-image col-12 col-md-6 col-sm-6 col-lg-2">
+                <div class="item-wrapper">
+                    <div class="">
+                        <img src="assets/images/photo-1651853082689-706323a31427.jpeg" alt="Mobirise Website Builder" title="" data-slide-to="5" data-bs-slide-to="5">
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="item features-image col-12 col-md-6 col-sm-6 col-lg-2">
+                <div class="item-wrapper">
+                    <div class="">
+                        <img src="assets/images/photo-1579041925709-798d7d0fed1d.jpeg" alt="Mobirise Website Builder" title="" data-slide-to="6" data-bs-slide-to="6">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="form5 cid-udzD5L4EZc" id="contact-form-2-udzD5L4EZc">
+    
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 content-head">
+                <div class="mbr-section-head mb-5">
+                    <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+                        <strong>Get in Touch</strong>
+                    </h3>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8 mx-auto mbr-form" data-form-type="formoid">
+                <form action="https://mobirise.eu/" method="POST" class="mbr-form form-with-styler" data-form-title="Form Name"><input type="hidden" name="email" data-form-email="true" value="cAZcCJ+RYidCz4wZOIjNTNl2c/MVYfuGb7A4le69pwBYfwokpfA6d6Ml5PDBF3+DPKnlCs4AfPv6e+NoPZV2F41lfTp5hr7CpU++fXBAJo6V8zXBGjpn51xnYJsTcBdC">
+                    <div class="row">
+                        <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling out the form!</div>
+                        <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
+                            Oops...! some problem!
+                        </div>
+                    </div>
+                    <div class="dragArea row">
+                        <div class="col-md col-sm-12 form-group mb-3" data-for="name">
+                            <input type="text" name="name" placeholder="Name" data-form-field="name" class="form-control" value="" id="name-contact-form-2-udzD5L4EZc">
+                        </div>
+                        <div class="col-md col-sm-12 form-group mb-3" data-for="email">
+                            <input type="email" name="email" placeholder="Email" data-form-field="email" class="form-control" value="" id="email-contact-form-2-udzD5L4EZc">
+                        </div>
+                        <div class="col-12 form-group mb-3" data-for="textarea">
+                            <textarea name="textarea" placeholder="Message" data-form-field="textarea" class="form-control" id="textarea-contact-form-2-udzD5L4EZc"></textarea>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 align-center mbr-section-btn">
+                            <button type="submit" class="btn btn-primary display-7">Send</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="contacts4 map1 cid-udzD5L4ipn" id="contacts-3-udzD5L4ipn">
+
+	
+
+    <div class="main_wrapper">
+		<div class="b_wrapper">
+			<div class="container-fluid">
+				<div class="row justify-content-start">
+					<div class="col-md-5 col-lg-4 item-wrapper">
+                        <h5 class="cardTitle mbr-fonts-style mb-2 display-5">
+                            <strong>Contact Us</strong>
+                        </h5>
+                        <ul class="list mbr-fonts-style display-7">
+                            <li class="mbr-text item-wrap">
+                            Phone:                                
+                            <a href="tel:1-800-PET-HELPER" class="text-black">1-800-PET-HELPER</a></li>
+
+                            <li class="mbr-text item-wrap">WhatsApp: 
+                            <a href="tel:1-800-PET-HELPER" class="text-black">1-800-PET-HELPER</a></li> 
+
+                            <li class="mbr-text item-wrap">                            
+                            Email:
+                            <a href="mailto:info@petadoptionassistant.com" class="text-black">info@petadoptionassistant.com</a>                        
+                            </li>
+
+                            <li class="mbr-text item-wrap">                        
+                            Address:
+                            123 Paws Avenue, Woofington
+                            </li>
+
+                            <li class="mbr-text item-wrap">
+                            Working Hours:
+                            Mon-Fri: 9am-5pm
+                            </li>
+                        </ul>
+					</div>
+				</div>
+			</div>
+		</div>
+        <div class="google-map"><iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6045.3003145248895!2d-73.9884657!3d40.7477229!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9ac1f1b85%3A0x7e33d1c0e7af3be4!2zMzUwIDV0aCBBdmUsIE5ldyBZb3JrLCBOWSAxMDExOCwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1689597362021!5m2!1sen!2sen" allowfullscreen=""></iframe></div>
+	</div>
+</section>
+
+<section data-bs-version="5.1" class="footer4 cid-udzD5L4kr9" once="footers" id="footer-4-udzD5L4kr9">
+
+    
+
+    
+
+    <div class="container">
+        <div class="media-container-row align-center mbr-white">
+            <div class="col-12">
+                <p class="mbr-text mb-0 mbr-fonts-style display-7">© 2024 Pet Adoption Assistant. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/ytplayer/index.js"></script>
+  <script src="assets/dropdown/js/navbar-dropdown.js"></script>
+  <script src="assets/vimeoplayer/player.js"></script>
+  <script src="assets/scrollgallery/scroll-gallery.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  <script src="assets/formoid/formoid.min.js"></script>
+  
+  
+  
+</body>
+</html>
